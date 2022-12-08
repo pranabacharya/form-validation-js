@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+fieldset {
+    width: 65%;
+    box-shadow: 22px 18px 25px rgba(34, 22, 0, 0.322);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+/* form {
+    padding: 10px;
+    width: 50%;
+} */
+.gender-item {
+    display: flex;
+    align-items: center;
+}
+input[type="radio"]{
+    display: inline-block;
+    width: 20px;
+    margin: 0 15px
+}
+.push-item {
+    padding: 0 65px 0 0;
+}
+span, .small {
+    color: red;
+    font-size: small;
+    padding: 0 5px;
+}
+input {
+    margin: 2px;
+    width: 50%;
+    height: 30px;
+    font-size: 20px;
+}
+input[type="button"]{
+    float: right;
+    width: 20%;
+    cursor: pointer;
+}
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+.msg-area-show {
+    width: 100%;
+    padding: 2px 0;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    color: aquamarine;
+    text-align: center;
+    background-color: midnightblue;
+    display: block;
+    opacity: .8 ;
+}

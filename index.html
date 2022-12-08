@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Validation JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend><h1>Student Registration Page</h1></legend>
+            <p class="small">All the fields (*) marked are required.</p>
+            <form >
+                <label class="push-item" for="name">Name</label>
+                <input type="text" name="name" id="name"><span id="nameErr">*</span><br>
+                <label class="push-item" for="email">Email</label>
+                <input type="text" name="email" id="email"><span id="emailErr">*</span><br>
+                <label for="number">Mobile Number</label>
+                <input type="text" name="number" id="number"><span id="numberErr">*</span><br>
+                <div class="gender-item">
+                    <label for="gender" class="push-item">Gender</label>
+            
+                <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label><span id="genderErr">*</span><br>
+                </div>
+                <label for="favColor">Favourite Color</label>
+                <input type="text" name="color" id="favColor"><span id="favColorErr">*</span><br>
+                <input type="button" id="button" value="Submit">
+                <textarea rows="8" cols="50" id="output" hidden></textarea>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
