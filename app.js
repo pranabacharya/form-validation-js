@@ -17,12 +17,12 @@ document.querySelector("#button").addEventListener('click', (e) => {
     const numberRegEx = /^\d{10}$/;
 
     //Name validation
-    if (nameElem.value === '') {
+    if (nameElem.value.trim() === '') {
         printToPage(nameErr, " *Name is required!!");
-    } else if (!nameElem.value.match(nameRegEx)) {
+    } else if (!nameElem.value.trim().match(nameRegEx)) {
         printToPage(nameErr, " *Only letters are allowed");
     } else {
-        name = nameElem.value;
+        name = nameElem.value.trim();
         printToPage(nameErr, "");
     }
     //Email validation
@@ -35,12 +35,12 @@ document.querySelector("#button").addEventListener('click', (e) => {
         printToPage(emailErr, "");
     }
     //Number Validation
-    if (numberElem.value === '') {
+    if (numberElem.value.trim() === '') {
         printToPage(numberErr, " *Mobile number is required!!");
-    } else if (!numberElem.value.match(numberRegEx)) {
+    } else if (!numberElem.value.trim().match(numberRegEx)) {
         printToPage(numberErr, " *Enter 10 digit mobile number");
     } else {
-        number = numberElem.value;
+        number = numberElem.value.trim();
         printToPage(numberErr, "");
     }
     //Gender Validation 
@@ -51,12 +51,12 @@ document.querySelector("#button").addEventListener('click', (e) => {
         printToPage(genderErr, " *Gender selection is required!!");
     }
     //Favourite Color Validation
-    if (favColorElem.value === '') {
+    if (favColorElem.value.trim() === '') {
         printToPage(favColorErr, " *Favourite color is required!!")
-    } else if (!favColorElem.value.match(nameRegEx)) {
+    } else if (!favColorElem.value.trim().match(nameRegEx)) {
         printToPage(favColorErr, " *Only letters are allowed");
     } else {
-        favColor = favColorElem.value;
+        favColor = favColorElem.value.trim();
         printToPage(favColorErr, "");
     }
 
