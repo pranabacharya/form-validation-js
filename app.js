@@ -63,8 +63,8 @@ document.querySelector("#button").addEventListener('click', (e) => {
     //Checking if the values are set or not
     if (name !== undefined && email !== undefined && number !== undefined && gender !== undefined && favColor !== undefined) {
         outputElem.style.display = 'block';
-        outputElem.value = "Name: " + name + ", Email: " + email + ", Mobile Number: " + number
-            + ", Gender: " + gender + ", Favourite Color: " + favColor;
+        outputElem.value = "Name: " + name + ",\nEmail: " + email + ",\nMobile Number: " + number
+            + ",\nGender: " + gender + ",\nFavourite Color: " + favColor;
         showAlert('msg-area-show', "Your data saved sucessfully", "green");
     } else {
         showAlert('msg-area-show', "Please provide appropriate input values", "red");
@@ -75,11 +75,11 @@ const printToPage = (elem, msg) => {
     elem.innerHTML = msg;
 }
 //Alert window generate
-const showAlert = (classNameForShowing, msg, color) => {
+const showAlert = (alertClassName, msg, color) => {
     removeAlert();
     let alertDiv = document.createElement('div');
     alertDiv.style.backgroundColor = color;
-    alertDiv.className = "alert "+classNameForShowing;
+    alertDiv.className = "alert "+alertClassName;
     alertDiv.innerText = msg;
     document.querySelector("fieldset").insertAdjacentElement("afterbegin", alertDiv);
     setTimeout(removeAlert, 4000);
