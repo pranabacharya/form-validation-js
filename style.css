@@ -12,7 +12,7 @@ body {
     padding: 10px;
 }
 fieldset {
-    width: 65%;
+    width: 60%;
     box-shadow: 22px 18px 25px rgba(34, 22, 0, 0.322);
     border: 2px solid black;
     border-radius: 5px;
@@ -46,7 +46,7 @@ input {
 }
 input[type="button"]{
     float: right;
-    width: 20%;
+    width: 25%;
     cursor: pointer;
 }
 textarea {
@@ -69,7 +69,7 @@ textarea {
 
 @media screen and (max-width: 800px){
     h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
     span , .small {
         font-size: 10px;
@@ -77,12 +77,18 @@ textarea {
     .msg-area-show,label {
         font-size: 10px;
     }
+    .push-item {
+        padding: 0;
+    }
     input {
-        font-size: 15px;
-        width: 200px;
-        height: 20px;
+        font-size: 10px;
+        width: 150px;
+        height: 15px;
+    }
+    textarea {
+        font-size: 10px;
     }
     input[type="button"] {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
